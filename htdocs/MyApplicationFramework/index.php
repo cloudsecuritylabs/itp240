@@ -1,4 +1,21 @@
 <html>
+<?php
+/************************************************/
+/*	INDEX.HTML									*/
+/*	This is the default location 				*/
+/*	of the website. 							*/
+/*	This file is responsible for receiving req.	*/
+/*												*/
+/*												*/
+/*												*/
+/*												*/
+/*												*/
+/*												*/
+/*												*/
+/*												*/
+/*												*/
+/************************************************/
+?>
 
 <?php
 	##Get the initilize file
