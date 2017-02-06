@@ -1,27 +1,31 @@
 <html>
 <head><title>Temperature Conversion</title></head>
 	<body>
-		<?php if ($_SERVER['REQUEST_METHOD'] == 'GET') { ?>
 
-		<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+		<?php $request_method = $_SERVER['REQUEST_METHOD']; ?>
+		<?php if ($request_method == 'GET') 
+			{ ?>
+			<!-- Add the html block -->
 
-		Fahrenheit temperature:
-			<input type="text" name="fahrenheit" /> <br />
-			<input type="submit" name="Convert to Celsius!" />
-		</form>
-		
-		<?php
-		} 
+			<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+			Fahrenheit temperature:
+				<input type="text" name="fahrenheit" /> <br />
+				<input type="submit" name="Convert to Celsius!" />
+			</form>
 
-		elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
-			$fahr = $_POST['fahrenheit'];
-			$celsius = ($fahr - 32) * 5/9;
-			printf("%.2fF is %.2fC", $fahr, $celsius);
-		} 
+			<?php
+			}
 
-		else {
-			die("This script only works with GET and POST requests.");
-		}
+			elseif ($_SERVER['REQUEST_METHOD'] == 'POST') 
+			{
+				$fahr = $_POST['fahrenheit'];
+				$celsius = ($fahr - 32) * 5/9;
+				printf("%.2fF is %.2fC", $fahr, $celsius);
+			} 
+
+			else {
+				die("This script only works with GET and POST requests.");
+			}
 	?>
 	</body>
 </html>

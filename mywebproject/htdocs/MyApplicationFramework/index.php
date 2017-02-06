@@ -20,10 +20,10 @@
 <?php
 	##Get the initilize file
 	 // echo "</h2>Get initialize file from htdocsIncludes</h2>";
-	require_once('/var/www/html/php/itp240/htdocsIncludes/MyApplicationFramework/initialize.php');
+	require_once('/var/www/html/htdocsIncludes/MyApplicationFramework/initialize.php');
 	##Get the page header information
 	// echo "<h2>Get pageHeader file from htdocsIncludes</h2>";
-	require_once('/var/www/html/php/itp240/htdocsIncludes/MyApplicationFramework/view/pageHeader.php');
+	require_once('/var/www/html/htdocsIncludes/MyApplicationFramework/view/pageHeader.php');
 
 ?>
 
@@ -43,7 +43,7 @@
 <?php
 	##get the page footer information.
 	// echo "<h2>Get pageFooter file from htdocsIncludes</h2>";
-	require_once('/var/www/html/php/itp240/htdocsIncludes/MyApplicationFramework/view/pageFooter.php');
+	require_once('/var/www/html/htdocsIncludes/MyApplicationFramework/view/pageFooter.php');
 	
 	##print the document root of the server.
 	// echo "<br>";
