@@ -47,5 +47,11 @@
 /*												*/
 /************************************************/
 
-require_once('/var/www/html/htdocsIncludes/MyApplicationFramework/functions.php');
+require_once('/var/www/html/php/itp240/mywebproject/htdocsIncludes/MyApplicationFramework/functions.php');
+require_once('/var/www/html/php/itp240/mywebproject/htdocsIncludes/MyApplicationFramework/model/users.class.php');
+require_once('/var/www/html/php/itp240/mywebproject/htdocsIncludes/MyApplicationFramework/model/users.class.php');
+require_once('/var/www/html/php/itp240/mywebproject/htdocsIncludes/MyApplicationFramework/controller/MyFirstModel.model.php');
+require_once('/var/www/html/php/itp240/mywebproject/htdocsIncludes/MyApplicationFramework/controller/MyFirstController.controller.php');
+require_once('/var/www/html/php/itp240/mywebproject/htdocsIncludes/MyApplicationFramework/controller/MyFirstView.view.php');
+
 ?>
